@@ -9,13 +9,73 @@
   line-height: 1.3em; }
 
 .reveal .block-text h2 {
-  background: rgba(20, 100, 40, 0.55); }
+  background: rgba(20, 100, 40, 0.65); }
+
+.reveal .controls {
+  background-color: rgba(255, 255, 255, 0.41);
+  border-radius: 50%; }
 
 #front-subtitle {
-  color: #228B22; }
+  color: #228B22;
+  font-size: 1.3em; }
+
+.reveal .section-head {
+  color: #008000; }
 
 .front-page a {
   font-size: 1.2em; }
+
+#navigation-bar {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  z-index: 20;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.2vw; }
+
+#navigation-bar nav {
+  padding: 10px 0;
+  background-color: #79bbef;
+  text-align: center; }
+
+#navigation-bar a {
+  display: inline-block;
+  padding: 0 2vw;
+  border-right: 2px solid #ccc;
+  text-decoration: none;
+  color: #3547a0; }
+
+#navigation-bar a:last-child {
+  border-right: none; }
+
+#navigation-bar a:hover {
+  text-decoration: #6d7ece; }
+
+#overview {
+  position: fixed;
+  width: 110px;
+  height: 110px;
+  z-index: 30;
+  left: 10px;
+  bottom: 10px;
+  -webkit-user-select: none;
+  background-color: rgba(255, 255, 255, 0.41);
+  border-radius: 50%; }
+
+#ov {
+  font-size: 3.1em;
+  color: #3547a0; }
+
+#overview div {
+  top: 30px;
+  left: 30px;
+  position: absolute; }
+
+#overview img {
+  height: 50px;
+  width: 50px; }
 
 /*********************************************
  * GLOBAL STYLES
@@ -44,7 +104,7 @@ body {
  *********************************************/
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
-  color: #6face4;
+  color: #dddce4;
   font-family: 'Quicksand', sans-serif;
   font-weight: normal;
   line-height: 1.2;

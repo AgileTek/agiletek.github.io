@@ -15,12 +15,14 @@
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
+    <link rel="stylesheet"
+          href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/agiletek.css" id="theme">
     <link rel="shortcut icon" href="media/img/favicon.ico">
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
+
 
     <!-- Printing and PDF exports -->
     <script>
@@ -30,7 +32,6 @@
         link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
         document.getElementsByTagName('head')[0].appendChild(link);
     </script>
-
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -47,21 +48,13 @@
 
             <img src="media/img/AgileTek_Green_Transparent.png">
 
-            <h4 id="front-subtitle">a modern subsea analysis consultancy</h4>
+            <h4 id="front-subtitle">modern subsea analysis consultancy</h4>
 
-            <div>
-                <a class="front-page" href="#/about-us">About</a> |
-                <a class="front-page" href="#/analysis">Analysis</a></h5> |
-                <a class="front-page" href="#/offshore-wind">Offshore Wind</a> |
-                <a class="front-page" href="#/oil-and-gas">Oil & Gas</a> |
-                <a class="front-page" href="#/contact">Contact</a>
-
-            </div>
         </section>
 
         <section>
             <section data-background="media/img/sea6.jpg" id="about-us">
-                <h1>About Us</h1>
+                <h1 class="section-head">About Us</h1>
                 <a href="#" class="navigate-down">
                     <img width="50" height="150"
                          data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
@@ -79,27 +72,19 @@
             <section>
                 <h2>Staff</h2>
 
-                <div>PhD & Masters level engineers with degrees in:</div>
-                <ul>
-                    <li>Mechanical Engineering</li>
-                    <li>Ship Science</li>
-                    <li>Offshore Engineering</li>
-                </ul>
+                <h3>PhD & Masters level engineers:</h3>
+
+                <h5>Mechanical Engineering</h5>
+                <h5>Ship Science</h5>
+                <h5>Offshore Engineering</h5>
+
             </section>
-            <!-- START MENU SLIDE -->
-            <section data-background="media/img/sea6.jpg">
-                <a href="#/about-us">About</a> |
-                <a href="#/analysis">Analysis</a></h5> |
-                <a href="#/offshore-wind">Offshore Wind</a> |
-                <a href="#/oil-and-gas">Oil & Gas</a> |
-                <a href="#/contact">Contact</a>
-            </section>
-            <!-- END MENU SLIDE -->
+
         </section>
 
         <section>
             <section data-background="media/img/sea6.jpg" id="analysis">
-                <h1>Analysis</h1>
+                <h1 class="section-head">Analysis</h1>
                 <a href="#" class="navigate-down">
                     <img width="50" height="150"
                          data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
@@ -134,20 +119,11 @@
                 <h2>Calculate component fatigue</h2>
             </section>
 
-            <!-- START MENU SLIDE -->
-            <section data-background="media/img/sea6.jpg">
-                <a href="#/about-us">About</a> |
-                <a href="#/analysis">Analysis</a></h5> |
-                <a href="#/offshore-wind">Offshore Wind</a> |
-                <a href="#/oil-and-gas">Oil & Gas</a> |
-                <a href="#/contact">Contact</a>
-            </section>
-            <!-- END MENU SLIDE -->
         </section>
 
-        <section>
+        <section id="owf">
             <section id="offshore-wind" data-background="media/img/sea6.jpg">
-                <h1>Offshore Wind</h1>
+                <h1 class="section-head">Offshore Wind</h1>
                 <a href="#" class="navigate-down">
                     <img width="50" height="150"
                          data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
@@ -155,41 +131,41 @@
                 </a>
             </section>
             <section data-background="media/img/owf.jpg">
-                <h2>Experience on over 30 offshore wind-farms:</h2>
-                <h4>Cable protection system design verification</h4>
-                <h4>Power cable fatigue analysis</h4>
-                <h4>Power cable installation</h4>
+                <h2 class="section-head">Experience on over 30 offshore wind-farms:</h2>
+                <h4 class="section-head">Cable protection system design verification</h4>
+                <h4 class="section-head">Power cable fatigue analysis</h4>
+                <h4 class="section-head">Power cable installation analysis</h4>
             </section>
-            <section data-background="media/img/owf2.jpg">
-                <h2>Analysis videos</h2>
+            <section data-background="media/img/owf2.jpg" class="section-head">
+                <h2 class="section-head">Analysis videos</h2>
                 <a href="#" class="navigate-down">
                     <img width="50" height="150"
                          data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
                          alt="Down arrow">
                 </a>
             </section>
-            <section
-                    data-background-video="/media/vid/cps_jacket_pull_in_overlay_3_no_titles_.webm, /media/vid/cps_jacket_pull_in_overlay_3_no_titles_.mp4"
-                    data-background-video-loop>
+            <section>
+                <video class="stretch" controls>
+                    <source data-src="/media/vid/cps_jacket_pull_in_overlay_3_no_titles_.webm"
+                            type="video/webm"/>
+                    <source data-src="/media/vid/cps_jacket_pull_in_overlay_3_no_titles_.mp4"
+                            type="video/mp4"/>
+                </video>
             </section>
-            <section
-                    data-background-video="/media/vid/cps_monopile_pull_in_overlay_3_no_titles_.webm,/media/vid/cps_monopile_pull_in_overlay_3_no_titles_.mp4"
-                    data-background-video-loop>
+            <section>
+                <video class="stretch" controls>
+                    <source data-src="/media/vid/cps_monopile_pull_in_overlay_3_no_titles_.webm"
+                            type="video/webm"/>
+                    <source data-src="/media/vid/cps_monopile_pull_in_overlay_3_no_titles_.mp4"
+                            type="video/mp4"/>
+                </video>
             </section>
-            <!-- START MENU SLIDE -->
-            <section data-background="media/img/sea6.jpg">
-                <a href="#/about-us">About</a> |
-                <a href="#/analysis">Analysis</a></h5> |
-                <a href="#/offshore-wind">Offshore Wind</a> |
-                <a href="#/oil-and-gas">Oil & Gas</a> |
-                <a href="#/contact">Contact</a>
-            </section>
-            <!-- END MENU SLIDE -->
+
         </section>
 
         <section>
             <section id="oil-and-gas" data-background="media/img/sea6.jpg">
-                <h1>Oil & Gas</h1>
+                <h1 class="section-head">Oil & Gas</h1>
                 <a href="#" class="navigate-down">
                     <img width="50" height="150"
                          data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
@@ -205,49 +181,40 @@
             </section>
             <section data-background="media/img/og.jpg">
                 <h2>Example projects:</h2>
-                <ul>
-                    <li>Flexible riser fatigue life extension</li>
-                    <li>Control umbilical deployment analysis</li>
-                    <li>End fitting design verification</li>
-                    <li>Power umbilical global storm and fatigue analysis</li>
-                </ul>
+                <h4>Flexible riser fatigue life extension</h4>
+                <h4>Control umbilical deployment analysis</h4>
+                <h4>End fitting design verification</h4>
+                <h4>Power umbilical global storm and fatigue analysis</h4>
+
 
             </section>
-            <!-- START MENU SLIDE -->
-            <section data-background="media/img/sea6.jpg">
-                <a href="#/1">About</a> |
-                <a href="#/2">Analysis</a></h5> |
-                <a href="#/3">Offshore Wind</a> |
-                <a href="#/4">Oil & Gas</a> |
-                <a href="#/5">Contact</a>
-            </section>
-            <!-- END MENU SLIDE -->
+
         </section>
 
         <section>
-            <section id="contact">
-                <div><a href="mailto:london@agiletek.co.uk">london@agiletek.co.uk</a></div>
+            <section id="contact" data-background="media/img/sea6.jpg">
+                <div id="social">
+                    <a href="mailto:london@agiletek.co.uk" target="_blank"><i
+                            class="fa fa-envelope-square fa-3x"></i></a>
+                    <a href="https://twitter.com/agiletek_london" target="_blank"><i
+                            class="fa fa-twitter-square fa-3x"></i></a>
+                    <a href="https://www.linkedin.com/company/agiletek-engineering-limited"
+                       target="_blank"><i
+                            class="fa fa-linkedin-square fa-3x"></i></a>
+                    <a href="https://www.youtube.com/channel/UCXGRoliBdR9mE9uPxl-Xn5Q"
+                       target="_blank"><i
+                            class="fa fa-youtube-square fa-3x"></i></a>
+                    <a href="https://plus.google.com/105702470684579280536/videos"
+                       target="_blank">
+                        <i
+                                class="fa fa-google-plus-square fa-3x"></i></a>
+                    <a href="https://github.com/AgileTek/" target="_blank"><i
+                            class="fa fa-github-square fa-3x"></i></a>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.428318645222!2d-0.09552631860167816!3d51.5053575593974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604a8810eb9d7%3A0x5080c4a311e40803!2sAgileTek+Engineering+Limited!5e0!3m2!1sen!2suk!4v1433246892703"
-                        width="600" height="450" frameborder="0" style="border:0"></iframe>
-                <div><a href="https://twitter.com/agiletek_london"
-                        class="twitter-follow-button" data-show-count="false"
-                        data-size="large">Follow @agiletek_london</a>
-                    <script>!function (d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = p + '://platform.twitter.com/widgets.js';
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, 'script', 'twitter-wjs');</script>
                 </div>
-                <div>
-                    <script src="//platform.linkedin.com/in.js"
-                            type="text/javascript"> lang: en_US</script>
-                    <script type="IN/FollowCompany" data-id="9339182"></script>
-                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4966.944352874092!2d-0.09806905291748658!3d51.50455284452076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604a8810eb9d7%3A0x5080c4a311e40803!2sAgileTek+Engineering+Limited!5e0!3m2!1sen!2suk!4v1433412028106"
+                        width="800" height="600" frameborder="0" style="border:0"></iframe>
 
 
             </section>
@@ -272,9 +239,31 @@
     </div>
 
 </div>
+<div id="navigation-bar">
+    <nav>
+        <a id="h-0" class="nav-link" href="#" onclick="Reveal.slide(0);"
+           style="background-color: rgba(255, 255, 255, 0.298039);">HOME</a><a id="h-1"
+                                                                               class="nav-link"
+                                                                               href="#/about-us">ABOUT</a><a
+            id="h-2" class="nav-link" href="#/analysis">ANALYSIS</a><a id="h-3"
+                                                                       class="nav-link"
+                                                                       href="#/offshore-wind">OFFSHORE
+        WIND</a><a id="h-4" class="nav-link" href="#/oil-and-gas">OIL & GAS</a><a id="h-5"
+                                                                                  class="nav-link"
+                                                                                  href="#/contact">CONTACT</a>
+    </nav>
+</div>
 
+<div id="overview">
+    <div><i class="fa fa-th fa-3x" id="ov" style="width: 50px;
+            padding-top: 2px;"
+
+            ></i></div>
+</div>
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="js/agiletek.js"></script>
 
 <script>
 
@@ -287,7 +276,7 @@
         center: true,
         backgroundTransition: 'fade',
         mouseWheel: true,
-        transition: 'fade',
+        transition: 'fade',//slideNumber: 'h:v (c/t)',
         // Optional reveal.js plugins
         dependencies: [
             {
@@ -321,3 +310,4 @@
 
 </body>
 </html>
+                                
