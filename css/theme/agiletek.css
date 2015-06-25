@@ -8,19 +8,36 @@
 .reveal a {
   line-height: 1.3em; }
 
-.reveal .block-text h2 {
-  background: rgba(20, 100, 40, 0.65); }
+.reveal .block-text {
+  background: rgba(255, 255, 255, 0.65);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px; }
 
 .reveal .controls {
-  background-color: rgba(255, 255, 255, 0.41);
+  background-color: rgba(118, 151, 190, 0.41);
   border-radius: 50%; }
 
 #front-subtitle {
-  color: #228B22;
+  color: #3547a0;
   font-size: 1.3em; }
 
+.reveal .offshore-wind {
+  color: #3547a0; }
+
+.reveal .capability {
+  margin: 0; }
+
+#capabilities {
+  text-align: left;
+  padding-left: 20%; }
+
+.reveal .mt {
+  font-size: 0.85em;
+  margin-bottom: 20px; }
+
 .reveal .section-head {
-  color: #008000; }
+  color: #3547a0; }
 
 .front-page a {
   font-size: 1.2em; }
@@ -28,7 +45,7 @@
 #navigation-bar {
   position: fixed;
   left: 0;
-  top: 0px;
+  top: 0;
   width: 100%;
   height: 50px;
   z-index: 20;
@@ -61,7 +78,7 @@
   left: 10px;
   bottom: 10px;
   -webkit-user-select: none;
-  background-color: rgba(255, 255, 255, 0.41);
+  background-color: rgba(118, 151, 190, 0.41);
   border-radius: 50%; }
 
 #ov {
@@ -81,14 +98,14 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #008000;
-  background-color: #008000; }
+  background: #FFFFFF;
+  background-color: #FFFFFF; }
 
 .reveal {
   font-family: 'Open Sans', sans-serif;
   font-size: 36px;
   font-weight: normal;
-  color: #6face4; }
+  color: #3547a0; }
 
 ::selection {
   color: #fff;
@@ -104,7 +121,7 @@ body {
  *********************************************/
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
-  color: #dddce4;
+  color: #3547a0;
   font-family: 'Quicksand', sans-serif;
   font-weight: normal;
   line-height: 1.2;
